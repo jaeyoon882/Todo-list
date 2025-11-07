@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        background-color: rgb(217, 215, 206);
+    }
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        padding-bottom: 22px;
+        margin-top: 25px;
+        border-bottom: 2px solid;
+        
+    }
+    #list {
+        font-size: 30px;
+        font-style: italic;
+        width: 70%;
+        list-style-type: none;
+    }
+    li {
+        display: felx;
+        align-items: center;
+        gap: 10px;
+    }
+     span[contenteditable="true"]:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+</head>
+<body>
+    <h1>To-do list</h1>
+    <ul id="list">
+        <li>
+            <input type="checkbox" />
+            <span class="agenda" contenteditable="true" onclick="remove_text(this)">Enter agenda:</span>
+        </li>
+  </div>
+
+        </li>
+    </ul>
+    <script src="script.js"></script>
+    
+</body>
+</html>
